@@ -38,7 +38,7 @@ jobs:
 
       - name: Install project dependencies
         working-directory: grok-workspace-edit
-        run: npm ci
+        run: npm install
 
       - name: Install Capacitor tooling
         working-directory: grok-workspace-edit
