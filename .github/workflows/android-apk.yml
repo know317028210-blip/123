@@ -48,6 +48,10 @@ jobs:
         working-directory: grok-workspace-edit
         run: npm run mobile:build
 
+      - name: Provide Capacitor entry point
+        working-directory: grok-workspace-edit
+        run: cp mobile-dist/mobile.html mobile-dist/index.html
+
       - name: Create Android project
         working-directory: grok-workspace-edit
         run: npx cap add android
